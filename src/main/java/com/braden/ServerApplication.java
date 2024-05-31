@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"com.braden.controller"})
+@ComponentScan(basePackages = {"com.braden.controller","com.braden.service" })
 public class ServerApplication {
 
 	public static void main(String[] args) {

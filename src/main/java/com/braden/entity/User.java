@@ -48,4 +48,12 @@ public class User {
     public void setBankBalance(float bankBalance) {
         this.bankBalance = bankBalance;
     }
+
+    public void increaseBankBalance(float amount) {
+        this.bankBalance += amount;
+    }
+
+    public void decreaseBankBalance(float amount) {
+        this.bankBalance -= amount;
+    }
 }

@@ -16,6 +16,16 @@ public class Transactions {
     @GeneratedValue(strategy= GenerationType.AUTO)
     private int transactionId;
 
+    public Transactions() {
+
+    }
+
+    public void createTransaction(int senderId, int recipientId, float amount) {
+        this.recipientId = recipientId;
+        this.senderId = senderId;
+        this.amount = amount;
+    }
+
     public int getRecipientId() {
         return recipientId;
     }
